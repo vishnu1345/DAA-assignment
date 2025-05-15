@@ -20,7 +20,7 @@ void rabinKarpMatcher(string T, string P, int d, int q) {
         t0 = (d * t0 + T[i]) % q;
     }
 
-    // Matching phase
+
     for (int s = 0; s <= n - m; s++) {
         if (p == t0) {
             // If hash values match, check actual substring
